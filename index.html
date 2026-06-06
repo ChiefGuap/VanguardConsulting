@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanguard Consulting</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0f1e;
+      color: #e0e6f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #0d1530;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1e2d5a;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #4a90e2;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: #a0b4d0;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #4a90e2;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h2 span {
+      color: #4a90e2;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: #8a9bbf;
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.85rem 2rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+    }
+
+    .btn-primary {
+      background-color: #4a90e2;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: #357abd;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: #4a90e2;
+      border: 2px solid #4a90e2;
+    }
+
+    .btn-secondary:hover {
+      background-color: #4a90e2;
+      color: #ffffff;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 900px;
+      margin: 5rem auto 0;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background-color: #0d1530;
+      border: 1px solid #1e2d5a;
+      border-radius: 10px;
+      padding: 2rem 1.5rem;
+      text-align: left;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover {
+      border-color: #4a90e2;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #8a9bbf;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #4a5a78;
+      font-size: 0.85rem;
+      border-top: 1px solid #1e2d5a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vanguard Consulting</h1>
+    <nav>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h2>Strategic Solutions for a <span>Modern World</span></h2>
+      <p>We help organizations navigate complexity, drive growth, and build lasting competitive advantage through data-driven strategy and expert consulting.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">Get Started</a>
+        <a href="#" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="card">
+        <h3>Strategy & Growth</h3>
+        <p>Define your vision and build a roadmap for sustainable, long-term growth.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Transformation</h3>
+        <p>Modernize operations and leverage technology to stay ahead of the curve.</p>
+      </div>
+      <div class="card">
+        <h3>Market Analysis</h3>
+        <p>Deep-dive research and insights to identify opportunities and mitigate risk.</p>
+      </div>
+      <div class="card">
+        <h3>Operational Excellence</h3>
+        <p>Streamline processes and improve efficiency across your entire organization.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Vanguard Consulting. All rights reserved.
+  </footer>
+
+</body>
+</html>
