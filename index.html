@@ -3,206 +3,360 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanguard Consulting</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  
+  <!-- SEO Meta Tags -->
+  <title>Vanguard Consulting | Technology-Forward Strategy at UC Davis</title>
+  <meta name="description" content="Vanguard Consulting is UC Davis's technology-forward student business organization. We deliver data-driven strategy across branding, growth, and market expansion to ventures and established companies." />
+  <meta name="keywords" content="Vanguard Consulting, UC Davis, student consulting, data-driven strategy, market expansion, branding, technology consulting" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vanguard Consulting | Technology-Forward Strategy" />
+  <meta property="og:description" content="Delivering data-driven, technology-informed solutions across branding, growth, and market expansion to growth-stage ventures and established companies from UC Davis." />
+  <meta property="og:image" content="image.png" />
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0f1e;
-      color: #e0e6f0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      background-color: #0d1530;
-      padding: 1.5rem 3rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #1e2d5a;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      color: #4a90e2;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    nav a {
-      color: #a0b4d0;
-      text-decoration: none;
-      margin-left: 2rem;
-      font-size: 0.95rem;
-      transition: color 0.2s;
-    }
-
-    nav a:hover {
-      color: #4a90e2;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #ffffff;
-      line-height: 1.2;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero h2 span {
-      color: #4a90e2;
-    }
-
-    .hero p {
-      font-size: 1.15rem;
-      color: #8a9bbf;
-      max-width: 600px;
-      line-height: 1.7;
-      margin-bottom: 2.5rem;
-    }
-
-    .cta-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 0.85rem 2rem;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.2s;
-      border: none;
-    }
-
-    .btn-primary {
-      background-color: #4a90e2;
-      color: #ffffff;
-    }
-
-    .btn-primary:hover {
-      background-color: #357abd;
-    }
-
-    .btn-secondary {
-      background-color: transparent;
-      color: #4a90e2;
-      border: 2px solid #4a90e2;
-    }
-
-    .btn-secondary:hover {
-      background-color: #4a90e2;
-      color: #ffffff;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem;
-      max-width: 900px;
-      margin: 5rem auto 0;
-      padding: 0 1rem;
-    }
-
-    .card {
-      background-color: #0d1530;
-      border: 1px solid #1e2d5a;
-      border-radius: 10px;
-      padding: 2rem 1.5rem;
-      text-align: left;
-      transition: border-color 0.2s;
-    }
-
-    .card:hover {
-      border-color: #4a90e2;
-    }
-
-    .card h3 {
-      font-size: 1.1rem;
-      color: #ffffff;
-      margin-bottom: 0.75rem;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: #8a9bbf;
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #4a5a78;
-      font-size: 0.85rem;
-      border-top: 1px solid #1e2d5a;
-    }
-  </style>
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Vanguard Consulting</h1>
-    <nav>
-      <a href="#">Services</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+  <!-- Fixed Paper Grain Overlay (Secret ingredient for organic feel) -->
+  <div class="paper-grain" id="grainOverlay"></div>
+
+  <!-- Background Orbs for atmospheric depth -->
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+
+  <!-- Header & Navigation -->
+  <header id="mainHeader">
+    <div class="container nav-container">
+      <a href="#" class="logo-link" id="logoLink">
+        <img src="vanguardlogo.PNG" alt="Vanguard Logo" class="logo-icon" id="logoImage" />
+        <span class="logo-text" id="logoText">Vanguard<span>.</span></span>
+      </a>
+      
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#services" class="nav-link" id="navLinkServices">Services</a>
+        <a href="#about" class="nav-link" id="navLinkAbout">About</a>
+        <a href="#methodology" class="nav-link" id="navLinkMethodology">Methodology</a>
+        <a href="#faq" class="nav-link" id="navLinkFaq">FAQs</a>
+        <a href="#join" class="btn btn-secondary" id="navLinkJoin" style="height: 2.75rem; padding: 0 1.5rem;">Join Us</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu" id="menuToggleBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <div class="hero">
-      <h2>Strategic Solutions for a <span>Modern World</span></h2>
-      <p>We help organizations navigate complexity, drive growth, and build lasting competitive advantage through data-driven strategy and expert consulting.</p>
-      <div class="cta-buttons">
-        <a href="#" class="btn btn-primary">Get Started</a>
-        <a href="#" class="btn btn-secondary">Learn More</a>
-      </div>
-    </div>
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" id="mobileNavMenu">
+    <a href="#services" class="nav-link" id="mobileNavLinkServices">Services</a>
+    <a href="#about" class="nav-link" id="mobileNavLinkAbout">About</a>
+    <a href="#methodology" class="nav-link" id="mobileNavLinkMethodology">Methodology</a>
+    <a href="#faq" class="nav-link" id="mobileNavLinkFaq">FAQs</a>
+    <a href="#join" class="btn btn-primary" id="mobileNavLinkJoin">Apply Now</a>
+  </div>
 
-    <div class="services">
-      <div class="card">
-        <h3>Strategy & Growth</h3>
-        <p>Define your vision and build a roadmap for sustainable, long-term growth.</p>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+          <div class="hero-content reveal" id="heroContentBlock">
+            <span class="hero-tag" id="heroUniversityTag">UNIVERSITY OF CALIFORNIA, DAVIS</span>
+            <h1 class="hero-title" id="heroHeadline">
+              Where technical fluency meets <span class="em-word">strategic strategy.</span>
+            </h1>
+            <p class="hero-desc" id="heroDescription">
+              Vanguard Consulting is a student-run strategy organization delivering data-driven and technology-informed solutions across branding, growth, and market expansion for growth-stage ventures and established firms.
+            </p>
+            <div class="hero-actions" id="heroButtons">
+              <a href="#join" class="btn btn-primary" id="btnHeroJoin">
+                Apply to Vanguard
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#services" class="btn btn-secondary" id="btnHeroServices">Explore Services</a>
+            </div>
+          </div>
+          
+          <div class="arch-container reveal" style="transition-delay: 200ms;" id="heroArchContainer">
+            <img src="image.png" alt="Vanguard Consulting Showcase" class="arch-image" id="heroArchImage" />
+            <div class="arch-border-accent" id="heroArchBorder"></div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Digital Transformation</h3>
-        <p>Modernize operations and leverage technology to stay ahead of the curve.</p>
+    </section>
+
+    <!-- Philosophy Quote / About -->
+    <section id="about" style="background-color: rgba(10, 17, 36, 0.3);">
+      <!-- Subtle curving vine decorator line -->
+      <svg class="deco-path" width="100%" height="200" viewBox="0 0 1440 200" style="top: -100px; left: 0;">
+        <path d="M 0,100 C 360,150 720,50 1080,150 L 1440,100" />
+      </svg>
+      
+      <div class="container">
+        <div class="reveal" style="max-width: 900px; margin: 0 auto; text-align: center;" id="philosophyBlock">
+          <span class="tracking-wide" style="color: var(--color-accent); font-size: 0.8rem; display: block; margin-bottom: 2rem;">Our Philosophy</span>
+          <div class="card backdrop-card" style="padding: 4rem 3rem;" id="philosophyQuoteCard">
+            <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); line-height: 1.5; margin-bottom: 2rem; font-weight: 500;" id="philosophyText">
+              "We deliberately recruit across disciplines—pairing <span class="em-word">computer science, law, and engineering</span> with economics to produce sharper, executable strategy."
+            </h2>
+            <p style="font-size: 1rem; color: var(--color-fg-secondary); max-width: 650px; margin: 0 auto; line-height: 1.8;" id="philosophyContext">
+              Modern business demands multi-dimensional thinkers. By integrating quantitative fluency and strategy frameworks, Vanguard consultants bridge the gap between technical complexity and business results.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Market Analysis</h3>
-        <p>Deep-dive research and insights to identify opportunities and mitigate risk.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 6rem;" id="servicesHeader">
+          <span class="tracking-wide" style="color: var(--color-accent); font-size: 0.8rem; display: block; margin-bottom: 1rem;">Core Capabilities</span>
+          <h2 id="servicesTitle">Delivering impact across <span class="em-word">key domains.</span></h2>
+          <p style="max-width: 600px; margin: 1.5rem auto 0;" id="servicesDesc">
+            We partner with businesses to address high-stakes problems with tailored, execution-oriented consulting.
+          </p>
+        </div>
+
+        <div class="grid grid-3 staggered-grid" id="servicesGrid">
+          <!-- Card 1 -->
+          <div class="card reveal" id="serviceCard1">
+            <div style="margin-bottom: 2rem;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 1rem;" id="serviceTitle1">Data & Tech Strategy</h3>
+            <p id="serviceDesc1">
+              Building quantitative strategy frameworks. We leverage data science methodologies, software tooling, and technical engineering analysis to ground strategy in objective metrics.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card reveal" style="transition-delay: 150ms;" id="serviceCard2">
+            <div style="margin-bottom: 2rem;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 1rem;" id="serviceTitle2">Branding & Growth</h3>
+            <p id="serviceDesc2">
+              Optimizing positioning, modern communication, and acquisition funnels. We align growth strategy to modern market demands, establishing metrics to verify brand presence.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card reveal" style="transition-delay: 300ms;" id="serviceCard3">
+            <div style="margin-bottom: 2rem;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 12h8M12 8v8"/>
+              </svg>
+            </div>
+            <h3 style="margin-bottom: 1rem;" id="serviceTitle3">Market Expansion</h3>
+            <p id="serviceDesc3">
+              Delivering data-driven insights for entering new geographies, customer verticals, or product areas. Formulated via market surveying, research, and feasibility analysis.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Operational Excellence</h3>
-        <p>Streamline processes and improve efficiency across your entire organization.</p>
+    </section>
+
+    <!-- Methodology / Engagement Section -->
+    <section id="methodology" style="background-color: rgba(10, 17, 36, 0.3);">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 5rem;" id="methodologyHeader">
+          <span class="tracking-wide" style="color: var(--color-accent); font-size: 0.8rem; display: block; margin-bottom: 1rem;">Engagement Timeline</span>
+          <h2 id="methodologyTitle">The path to <span class="em-word">executable solutions.</span></h2>
+          <p style="max-width: 600px; margin: 1.5rem auto 0;" id="methodologyDesc">
+            Our consultants undergo extensive development and structured mentorship to guarantee professional-grade deliverables.
+          </p>
+        </div>
+
+        <div class="steps-container" id="methodologySteps">
+          <!-- Step 1 -->
+          <div class="step-card reveal" id="step1">
+            <div class="step-number" id="stepNo1">01</div>
+            <div class="step-info">
+              <h3 id="stepTitle1">Multidisciplinary Selection</h3>
+              <p id="stepDesc1">
+                We recruit candidates with backgrounds in computer science, law, engineering, and economics. This diversity of thought ensures we look at strategy challenges through multiple functional lenses.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card reveal" id="step2">
+            <div class="step-number" id="stepNo2">02</div>
+            <div class="step-info">
+              <h3 id="stepTitle2">Rigorous Skills Training</h3>
+              <p id="stepDesc2">
+                All newly recruited consultants go through a thorough training period studying traditional business frameworks, quantitative analytics, and modern business software tools.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card reveal" id="step3">
+            <div class="step-number" id="stepNo3">03</div>
+            <div class="step-info">
+              <h3 id="stepTitle3">Industry Mentorship</h3>
+              <p id="stepDesc3">
+                Teams are coached and mentored directly by consultants working at top-tier global firms. This keeps our frameworks aligned with modern commercial standards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card reveal" id="step4">
+            <div class="step-number" id="stepNo4">04</div>
+            <div class="step-info">
+              <h3 id="stepTitle4">10-12 Week Client Engagements</h3>
+              <p id="stepDesc4">
+                Consultants work in small, focused teams directly engaging with clients. Through intensive research, modeling, and client feedback, we deliver actionable solutions that drive measurable impact.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="container">
+        <div class="reveal" style="text-align: center;" id="faqHeader">
+          <span class="tracking-wide" style="color: var(--color-accent); font-size: 0.8rem; display: block; margin-bottom: 1rem;">Common Questions</span>
+          <h2 id="faqTitle">Frequently Asked <span class="em-word">Questions.</span></h2>
+        </div>
+
+        <div class="faq-container" id="faqAccordionGroup">
+          <!-- Item 1 -->
+          <div class="faq-item reveal" id="faqItem1">
+            <button class="faq-question" id="faqBtn1">
+              Who does Vanguard Consulting partner with?
+              <svg class="faq-icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faqAns1">
+              <p>We work with growth-stage ventures and established companies looking for technology-informed, data-driven strategic advisory. Our client engagements range from local Northern California firms to global tech companies.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item reveal" id="faqItem2">
+            <button class="faq-question" id="faqBtn2">
+              What disciplines do you recruit from at UC Davis?
+              <svg class="faq-icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faqAns2">
+              <p>We deliberately recruit across all majors at UC Davis. While many business clubs focus solely on economics, we actively look for students in computer science, engineering, law, cognitive science, and social sciences. We value analytical rigor and technical fluency.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item reveal" id="faqItem3">
+            <button class="faq-question" id="faqBtn3">
+              How long is a typical engagement?
+              <svg class="faq-icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faqAns3">
+              <p>Our client engagements last between 10 and 12 weeks, matching the UC Davis quarter system. This structure allows us to build dedicated project plans with clear, measurable deliverables by the end of the term.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item reveal" id="faqItem4">
+            <button class="faq-question" id="faqBtn4">
+              What training do Vanguard consultants receive?
+              <svg class="faq-icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faqAns4">
+              <p>All consultants go through a rigorous education period where they are trained in market analysis, business frameworks (MECE, SWOT, Porter's 5 Forces), data analytics (Excel/SQL/Python), slide deck design, and client presentation skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split Call to Action Section -->
+    <section id="join" style="padding-bottom: 10rem;">
+      <div class="container">
+        <div class="split-cta" id="ctaSplitBlock">
+          <!-- Client Card -->
+          <div class="card split-cta-card reveal" style="border-color: rgba(212, 160, 23, 0.1);" id="clientCtaCard">
+            <div>
+              <span class="tracking-wide" style="color: var(--color-accent); font-size: 0.8rem; display: block; margin-bottom: 1rem;">For Businesses</span>
+              <h3 id="clientCtaTitle">Partner with <span class="em-word">Vanguard.</span></h3>
+              <p id="clientCtaDesc">Resolve your growth challenges with data-driven strategy and technical fluency. Work with a dedicated project team overseen by industry mentors.</p>
+            </div>
+            <a href="mailto:vanguarducdavis@gmail.com" class="btn btn-primary" id="btnClientCta">
+              Work With Us
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Student Card -->
+          <div class="card split-cta-card reveal" style="transition-delay: 150ms;" id="studentCtaCard">
+            <div>
+              <span class="tracking-wide" style="color: var(--color-fg-secondary); font-size: 0.8rem; display: block; margin-bottom: 1rem;">For Students</span>
+              <h3 id="studentCtaTitle">Join our <span class="em-word">cohort.</span></h3>
+              <p id="studentCtaDesc">Develop multi-dimensional leadership skills, participate in rigorous consulting training, and build strategies for real businesses.</p>
+            </div>
+            <a href="https://forms.gle/vanguarducdavis" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btnStudentCta">
+              Apply to Cohort
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    &copy; 2026 Vanguard Consulting. All rights reserved.
+  <!-- Footer -->
+  <footer id="footerBlock">
+    <div class="container">
+      <div class="footer-top" id="footerTopGrid">
+        <div class="footer-brand" id="footerBrandBlock">
+          <h4 id="footerBrandTitle">Vanguard<span>.</span></h4>
+          <p id="footerBrandDesc">Delivering technology-forward consulting and building multi-dimensional leaders at the University of California, Davis.</p>
+          <a href="mailto:vanguarducdavis@gmail.com" style="color: var(--color-accent); text-decoration: none; font-size: 0.95rem;" id="footerEmailLink">vanguarducdavis@gmail.com</a>
+        </div>
+        
+        <div class="footer-links" id="footerNavCol1">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#faq">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links" id="footerNavCol2">
+          <h5>Engagement</h5>
+          <ul>
+            <li><a href="#join">For Businesses</a></li>
+            <li><a href="#join">Join Cohort</a></li>
+            <li><a href="https://ucdavis.edu" target="_blank" rel="noopener noreferrer">UC Davis</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom" id="footerBottomBlock">
+        <p id="footerCopyright">&copy; 2026 Vanguard Consulting. All rights reserved.</p>
+        <p style="margin-top: 0.75rem; font-size: 0.75rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.5;" id="footerDisclaimer">
+          Vanguard Consulting is an independent student-run business organization registered at the University of California, Davis. This website is not officially endorsed by or affiliated with the UC Davis administration.
+        </p>
+      </div>
+    </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="index.js"></script>
 </body>
 </html>
